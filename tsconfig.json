@@ -5,7 +5,7 @@
     "noEmit": true
   },
   "files": [
-    "types/index.d.ts",
+    "src/index.d.ts",
     "tests/types/typescript.ts"
   ],
   "exclude": [

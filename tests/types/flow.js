@@ -1,5 +1,5 @@
 /* @flow */
-import * as fns from 'rhythm-fns';
+import * as fns from '../../src';
 
 
 // getBoxHeight
