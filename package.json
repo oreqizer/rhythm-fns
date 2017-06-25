@@ -12,6 +12,7 @@
     "test:flow": "flow check",
     "test:ts": "tsc",
     "lint": "eslint 'src/**/*.js'",
+    "coverage": "nyc npm test",
     "prepare": "npm test && npm run test:flow && npm run test:ts && npm run lint"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.6.0",
     "flow-bin": "^0.48.0",
+    "nyc": "^11.0.2",
     "tape": "^4.6.3",
     "typescript": "^2.3.4"
   },
