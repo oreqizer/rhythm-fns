@@ -7,6 +7,8 @@
 
 Functions useful for calculating vertical rhythm. :musical_note:
 
+![Rytmus](http://imgur.com/UlX8gHu.jpg)
+
 ## API
 
 The entire package exports just these 4 pure functions.
