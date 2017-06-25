@@ -18,17 +18,35 @@ let n: number = fns.getBoxMargin(1, 1, 1, 1);
 // $FlowExpected
 let s: string = fns.getBoxMargin(1, 1, 1, 1);
 
-// getLines
+// getLineHeight
 // ---
 
-fns.getLines(1, 1, 1);
+fns.getLineHeight(1, 1, 1);
 // $FlowExpected
-fns.getLines('1', 1, 1);
+fns.getLineHeight('1', 1, 1);
 // $FlowExpected
-fns.getLines(1, '1', 1);
+fns.getLineHeight(1, '1', 1);
 // $FlowExpected
-fns.getLines(1, 1, '1');
+fns.getLineHeight(1, 1, '1');
 
-n = fns.getLines(1, 1, 1);
+n = fns.getLineHeight(1, 1, 1);
 // $FlowExpected
-s = fns.getLines(1, 1, 1);
+s = fns.getLineHeight(1, 1, 1);
+
+// getLineMargin
+// ---
+
+fns.getLineMargin(1, 1, 1);
+fns.getLineMargin(1, 1, 1, 1);
+// $FlowExpected
+fns.getLineMargin('1', 1, 1);
+// $FlowExpected
+fns.getLineMargin(1, '1', 1);
+// $FlowExpected
+fns.getLineMargin(1, 1, '1');
+// $FlowExpected
+fns.getLineMargin(1, 1, 1, '1');
+
+n = fns.getLineMargin(1, 1, 1);
+// $FlowExpected
+s = fns.getLineMargin(1, 1, 1);

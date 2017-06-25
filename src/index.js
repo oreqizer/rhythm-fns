@@ -21,7 +21,7 @@ function roundLines(baseLineRatio, scale) {
 /**
  * Calculates the margin to apply to an element that uses height.
  * @param baseFontSize - ratio between the base font size and line height
- * @param baseLineRatio - base font size used across the page
+ * @param baseLineRatio - absolute base font size used across the page
  * @param heightScale - your element's desired height relative to the base font size
  * @param margins - extra margins relative to the base font size
  * @returns {number} - absolute margin to apply to your element
@@ -34,18 +34,34 @@ function getBoxMargin(baseFontSize, baseLineRatio, heightScale, margins) {
 }
 
 /**
- * Calculates the height of the lines to apply to an element.
- * @param baseFontSize - ratio between the base font size and line height
- * @param baseLineRatio - base font size used across the page
- * @param scale - desired scale relative to the base font size
+ * Calculates the line height to apply to a text element.
+ * @param baseFontSize - relative ratio between the base font size and line height
+ * @param baseLineRatio - absolute base font size used across the page
+ * @param fontSize - desired font size relative to the base font size
  * @returns {number} - absolute line height to apply to your element
  */
-function getLines(baseFontSize, baseLineRatio, scale) {
-  return roundLines(baseLineRatio, scale) * baseFontSize;
+function getLineHeight(baseFontSize, baseLineRatio, fontSize) {
+  return roundLines(baseLineRatio, fontSize) * baseFontSize;
+}
+
+/**
+ * Calculates the margin to apply to a text element.
+ * @param baseFontSize - ratio between the base font size and line height
+ * @param baseLineRatio - absolute base font size used across the page
+ * @param margins - extra margins relative to the base font size
+ * @param maybeBorder - (optional) absolute border to subtract from the result
+ * @returns {number} - absolute margin to apply to your element
+ */
+function getLineMargin(baseFontSize, baseLineRatio, margins, maybeBorder) {
+  var border = maybeBorder || 0;
+  var base = roundLines(baseLineRatio, margins) * baseFontSize;
+
+  return base - border;
 }
 
 
 module.exports = {
   getBoxMargin: getBoxMargin,
-  getLines: getLines
+  getLineHeight: getLineHeight,
+  getLineMargin: getLineMargin
 };

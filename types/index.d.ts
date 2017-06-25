@@ -6,9 +6,22 @@ declare module 'rhythm-fns' {
     margins: number
   ): number;
 
-  export function getLines(
+  export function getLineHeight(
     baseFontSize: number,
     baseLineRatio: number,
-    scale: number,
+    fontSize: number,
+  ): number;
+
+  export function getLineMargin(
+    baseFontSize: number,
+    baseLineRatio: number,
+    margins: number,
+  ): number;
+
+  export function getLineMargin(
+    baseFontSize: number,
+    baseLineRatio: number,
+    margins: number,
+    maybeBorder: number,
   ): number;
 }
