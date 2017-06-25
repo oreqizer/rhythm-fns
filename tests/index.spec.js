@@ -14,6 +14,7 @@ test('getBoxMargin', (t) => {
   t.equal(fns.getBoxMargin(16, 1.5, 2, 2), 48, 'round height, round margin');
   t.equal(fns.getBoxMargin(16, 1.5, 2, 0.75), 24, 'round height, fraction margin');
   t.equal(fns.getBoxMargin(16, 1.5, 2, 0), 0, 'round height, zero margin');
+  t.equal(fns.getBoxMargin(16, 1.5, 4, 0), 0, 'bigger round height, zero margin');
 
   // 6 is half of an extra margin
   t.equal(fns.getBoxMargin(16, 1.5, 3.5, 2), 48 + 6, 'fraction height, round margin');

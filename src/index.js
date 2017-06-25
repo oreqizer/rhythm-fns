@@ -1,9 +1,8 @@
 'use strict';
 
 function halfExtraMargin(baseLineRatio, scale) {
-  var lines = Math.ceil(scale / baseLineRatio);
-  var height = baseLineRatio * scale;
-  var leftover = height - (baseLineRatio * lines);
+  var lines = Math.ceil(scale);
+  var leftover = (baseLineRatio * lines) - (baseLineRatio * scale);
 
   return leftover / 2;
 }
