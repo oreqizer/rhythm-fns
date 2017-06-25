@@ -2,6 +2,13 @@
   "name": "rhythm-fns",
   "version": "0.1.0",
   "description": "Functions useful for vertical rhythm. :musical_note:",
+  "keywords": [
+    "vertical",
+    "rhythm",
+    "functions",
+    "utility",
+    "css"
+  ],
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "repository": "git@github.com:oreqizer/rhythm-fns.git",
