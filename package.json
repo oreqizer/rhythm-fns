@@ -10,7 +10,7 @@
     "css"
   ],
   "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "types": "types/index.d.ts",
   "repository": "git@github.com:oreqizer/rhythm-fns.git",
   "author": "oreqizer <oreqizer@gmail.com>",
   "license": "MIT",
