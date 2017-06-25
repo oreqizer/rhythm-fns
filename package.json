@@ -1,0 +1,24 @@
+{
+  "name": "rhythm-fns",
+  "version": "0.0.0",
+  "description": "Functions useful for vertical rhythm. :musical_note:",
+  "main": "src/index.js",
+  "repository": "git@github.com:oreqizer/rhythm-fns.git",
+  "author": "oreqizer <oreqizer@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "tape tests/*.spec.js",
+    "lint": "eslint 'src/**/*.js'",
+    "prepublish": "npm test && npm run lint"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.0",
+    "tape": "^4.6.3"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ]
+}
