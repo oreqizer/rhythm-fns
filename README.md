@@ -1,5 +1,10 @@
 # Rhythm fns
 
+[![Build Status](https://travis-ci.org/oreqizer/rhythm-fns.svg?branch=master)](https://travis-ci.org/oreqizer/rhythm-fns)
+[![codecov](https://codecov.io/gh/oreqizer/rhythm-fns/branch/master/graph/badge.svg)](https://codecov.io/gh/oreqizer/rhythm-fns)
+![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
+[![npm](https://img.shields.io/npm/v/rhythm-fns.svg)](https://www.npmjs.com/package/rhythm-fns)
+
 Functions useful for calculating vertical rhythm. :musical_note:
 
 ## API
