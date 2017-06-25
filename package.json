@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "test": "tape tests/*.spec.js",
-    "test:coverage": "nyc npm test",
+    "test:coverage": "nyc --reporter=lcov > coverage.lcov npm test",
     "test:flow": "flow check",
     "test:ts": "tsc",
     "lint": "eslint 'src/**/*.js'",
