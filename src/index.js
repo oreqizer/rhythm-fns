@@ -1,6 +1,6 @@
 'use strict';
 
-function boxMargin(baseLineRatio, scale) {
+function halfExtraMargin(baseLineRatio, scale) {
   var lines = Math.ceil(scale / baseLineRatio);
   var height = baseLineRatio * scale;
   var leftover = height - (baseLineRatio * lines);
@@ -27,7 +27,7 @@ function roundLines(baseLineRatio, scale) {
  * @returns {number} - absolute margin to apply to your element
  */
 function getBoxMargin(baseFontSize, baseLineRatio, heightScale, margins) {
-  var fill = boxMargin(baseLineRatio, heightScale);
+  var fill = halfExtraMargin(baseLineRatio, heightScale);
   var lines = roundLines(baseLineRatio, margins);
 
   return (fill + lines) * baseFontSize;
