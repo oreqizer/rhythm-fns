@@ -28,7 +28,7 @@ function getBoxHeight(baseFontSize, baseLineRatio, heightScale) {
  * @param baseFontSize - ratio between the base font size and line height
  * @param baseLineRatio - absolute base font size used across the page
  * @param heightScale - your element's desired height relative to the base line height
- * @param margins - extra margins relative to the base font size
+ * @param margins - extra margins relative to the base line height
  * @returns {number} - absolute margin to apply to your element
  */
 function getBoxMargin(baseFontSize, baseLineRatio, heightScale, margins) {
@@ -53,7 +53,7 @@ function getLineHeight(baseFontSize, baseLineRatio, fontSize) {
  * Calculates the margin to apply to a text element.
  * @param baseFontSize - ratio between the base font size and line height
  * @param baseLineRatio - absolute base font size used across the page
- * @param margins - extra margins relative to the base font size
+ * @param margins - extra margins relative to the base line height
  * @param maybeBorder - (optional) absolute border to subtract from the result
  * @returns {number} - absolute margin to apply to your element
  */
