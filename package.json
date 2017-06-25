@@ -24,6 +24,11 @@
     "tape": "^4.6.3",
     "typescript": "^2.3.4"
   },
+  "nyc": {
+    "exclude": [
+      "tests"
+    ]
+  },
   "files": [
     "src",
     "types",
