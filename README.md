@@ -9,6 +9,8 @@ Functions useful for calculating vertical rhythm. :musical_note:
 
 ![Rytmus](http://imgur.com/UlX8gHu.jpg)
 
+Includes _TypeScript_ and _Flow_ types!
+
 ## Install
 
 Simply `yarn add rhythm-fns`, or the equivalent via `npm`.
