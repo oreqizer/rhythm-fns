@@ -1,13 +1,5 @@
 'use strict';
 
-function ceilLines(baseLineRatio, scale) {
-  if (scale <= 0) {
-    return 0;
-  }
-
-  return Math.ceil(Math.max(scale, 1) / baseLineRatio) * baseLineRatio;
-}
-
 function halfExtraMargin(baseLineRatio, scale) {
   var lines = Math.ceil(scale / baseLineRatio);
   var height = baseLineRatio * scale;
@@ -41,7 +33,7 @@ function getBoxHeight(baseFontSize, baseLineRatio, heightScale) {
  */
 function getBoxMargin(baseFontSize, baseLineRatio, heightScale, margins) {
   var fill = halfExtraMargin(baseLineRatio, heightScale);
-  var lines = ceilLines(baseLineRatio, margins * baseLineRatio);
+  var lines = Math.ceil(margins) * baseLineRatio;
 
   return (fill + lines) * baseFontSize;
 }
@@ -54,7 +46,7 @@ function getBoxMargin(baseFontSize, baseLineRatio, heightScale, margins) {
  * @returns {number} - absolute line height to apply to your element
  */
 function getLineHeight(baseFontSize, baseLineRatio, fontSize) {
-  return ceilLines(baseLineRatio, fontSize) * baseFontSize;
+  return Math.ceil(fontSize / baseLineRatio) * baseLineRatio * baseFontSize;
 }
 
 /**
@@ -67,7 +59,7 @@ function getLineHeight(baseFontSize, baseLineRatio, fontSize) {
  */
 function getLineMargin(baseFontSize, baseLineRatio, margins, maybeBorder) {
   var border = maybeBorder || 0;
-  var base = ceilLines(baseLineRatio, margins * baseLineRatio) * baseFontSize;
+  var base = Math.ceil(margins) * baseLineRatio * baseFontSize;
 
   return base - border;
 }
