@@ -28,7 +28,7 @@ test('getLineHeight', (t) => {
   t.equal(fns.getLineHeight(16, 1.5, 1.5), 24, 'equal');
   t.equal(fns.getLineHeight(16, 1.5, 1.125), 24, 'smaller');
   t.equal(fns.getLineHeight(16, 1.5, 0.5), 24, 'a lot smaller');
-  t.equal(fns.getLineHeight(16, 1.5, 0), 0, 'zero`');
+  t.equal(fns.getLineHeight(16, 1.5, 0), 0, 'zero');
   t.end();
 });
 
