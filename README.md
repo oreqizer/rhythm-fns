@@ -1,6 +1,6 @@
 # Rhythm fns
 
-Functions useful for vertical rhythm. :musical_note:
+Functions useful for calculating vertical rhythm. :musical_note:
 
 ## API
 

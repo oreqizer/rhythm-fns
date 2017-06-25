@@ -9,10 +9,10 @@
   "license": "MIT",
   "scripts": {
     "test": "tape tests/*.spec.js",
+    "test:coverage": "nyc npm test",
     "test:flow": "flow check",
     "test:ts": "tsc",
     "lint": "eslint 'src/**/*.js'",
-    "coverage": "nyc npm test",
     "prepare": "npm test && npm run test:flow && npm run test:ts && npm run lint"
   },
   "devDependencies": {

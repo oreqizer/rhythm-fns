@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - "6"
+  - "7"
+  - "8"
+
+script:
+  - npm run test:coverage
+  - npm run test:flow
+  - npm run test:ts
+  - npm run lint
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
