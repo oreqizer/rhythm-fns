@@ -1,3 +1,4 @@
+/* @flow */
 declare module 'rhythm-fns' {
   declare export function getBoxMargin(
     baseFontSize: number,
@@ -6,15 +7,9 @@ declare module 'rhythm-fns' {
     margins: number
   ): number;
 
-  declare export function getLineHeight(
+  declare export function getLines(
     baseFontSize: number,
     baseLineRatio: number,
-    fontSize: number,
-  ): number;
-
-  declare export function getLineMargin(
-    baseFontSize: number,
-    baseLineRatio: number,
-    margins: number
+    scale: number,
   ): number;
 }

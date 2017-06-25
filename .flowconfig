@@ -1,0 +1,10 @@
+[ignore]
+
+[include]
+
+[libs]
+types/
+
+[options]
+emoji=true
+suppress_comment=\\(.\\|\n\\)*\\$FlowExpected

@@ -3,22 +3,29 @@
   "version": "0.0.0",
   "description": "Functions useful for vertical rhythm. :musical_note:",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "repository": "git@github.com:oreqizer/rhythm-fns.git",
   "author": "oreqizer <oreqizer@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "tape tests/*.spec.js",
+    "test:flow": "flow check",
+    "test:ts": "tsc",
     "lint": "eslint 'src/**/*.js'",
-    "prepublish": "npm test && npm run lint"
+    "prepare": "npm test && npm run test:flow && npm run test:ts && npm run lint"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.6.0",
-    "tape": "^4.6.3"
+    "flow-bin": "^0.48.0",
+    "tape": "^4.6.3",
+    "typescript": "^2.3.4"
   },
   "files": [
     "src",
+    "types",
+    ".flowconfig",
     "README.md"
   ]
 }

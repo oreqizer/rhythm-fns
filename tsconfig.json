@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noEmit": true
+  },
+  "files": [
+    "types/index.d.ts",
+    "tests/types/typescript.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

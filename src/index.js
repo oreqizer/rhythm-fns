@@ -1,3 +1,5 @@
+'use strict';
+
 function boxMargin(baseLineRatio, scale) {
   var lines = Math.ceil(scale / baseLineRatio);
   var height = baseLineRatio * scale;
@@ -32,32 +34,18 @@ function getBoxMargin(baseFontSize, baseLineRatio, heightScale, margins) {
 }
 
 /**
- * Calculates the line height to apply to a text element.
+ * Calculates the height of the lines to apply to an element.
  * @param baseFontSize - ratio between the base font size and line height
  * @param baseLineRatio - base font size used across the page
- * @param fontSize - your element's desired font size relative to the base font size
+ * @param scale - desired scale relative to the base font size
  * @returns {number} - absolute line height to apply to your element
  */
-function getLineHeight(baseFontSize, baseLineRatio, fontSize) {
-  return roundLines(baseLineRatio, fontSize) * baseFontSize;
-}
-
-/**
- * Calculates the margin to apply to a text element.
- * @param baseFontSize - ratio between the base font size and line height
- * @param baseLineRatio - base font size used across the page
- * @param margins - extra margins relative to the base font size
- * @returns {number} - absolute margin to apply to your element
- */
-function getLineMargin(baseFontSize, baseLineRatio, margins) {
-  var lines = roundLines(baseLineRatio, margins);
-
-  return lines * baseFontSize;
+function getLines(baseFontSize, baseLineRatio, scale) {
+  return roundLines(baseLineRatio, scale) * baseFontSize;
 }
 
 
 module.exports = {
-  getMoxMargin: getBoxMargin,
-  getLineHeight: getLineHeight,
-  getLineMargin: getLineMargin
+  getBoxMargin: getBoxMargin,
+  getLines: getLines
 };
