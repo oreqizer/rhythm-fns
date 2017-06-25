@@ -1,4 +1,10 @@
 declare module 'rhythm-fns' {
+  export function getBoxHeight(
+    baseFontSize: number,
+    baseLineRatio: number,
+    heightScale: number,
+  ): number;
+
   export function getBoxMargin(
     baseFontSize: number,
     baseLineRatio: number,

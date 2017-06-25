@@ -1,6 +1,22 @@
 /* @flow */
 import * as fns from 'rhythm-fns';
 
+
+// getBoxHeight
+// ---
+
+fns.getBoxHeight(1, 1, 1);
+// $FlowExpected
+fns.getBoxHeight('1', 1, 1);
+// $FlowExpected
+fns.getBoxHeight(1, '1', 1);
+// $FlowExpected
+fns.getBoxHeight(1, 1, '1');
+
+let n: number = fns.getBoxHeight(1, 1, 1);
+// $FlowExpected
+let s: string = fns.getBoxHeight(1, 1, 1);
+
 // getBoxMargin
 // ---
 
@@ -14,9 +30,9 @@ fns.getBoxMargin(1, 1, '1', 1);
 // $FlowExpected
 fns.getBoxMargin(1, 1, 1, '1');
 
-let n: number = fns.getBoxMargin(1, 1, 1, 1);
+n = fns.getBoxMargin(1, 1, 1, 1);
 // $FlowExpected
-let s: string = fns.getBoxMargin(1, 1, 1, 1);
+s = fns.getBoxMargin(1, 1, 1, 1);
 
 // getLineHeight
 // ---

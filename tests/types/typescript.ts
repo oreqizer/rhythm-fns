@@ -1,11 +1,19 @@
 import * as fns from 'rhythm-fns';
 
+
+// getBoxHeight
+// ---
+
+fns.getBoxHeight(1, 1, 1);
+
+let n: number = fns.getBoxHeight(1, 1, 1);
+
 // getBoxMargin
 // ---
 
 fns.getBoxMargin(1, 1, 1, 1);
 
-let n: number = fns.getBoxMargin(1, 1, 1, 1);
+n = fns.getBoxMargin(1, 1, 1, 1);
 
 // getLineHeight
 // ---
