@@ -32,7 +32,7 @@ function getBoxHeight(baseFontSize, baseLineRatio, heightScale) {
  */
 function getBoxMargin(baseFontSize, baseLineRatio, heightScale, margins) {
   var fill = halfExtraMargin(baseLineRatio, heightScale);
-  var lines = Math.ceil(margins) * baseLineRatio;
+  var lines = margins * baseLineRatio;
 
   return (fill + lines) * baseFontSize;
 }
@@ -58,7 +58,7 @@ function getLineHeight(baseFontSize, baseLineRatio, fontSize) {
  */
 function getLineMargin(baseFontSize, baseLineRatio, margins, maybeBorder) {
   var border = maybeBorder || 0;
-  var base = Math.ceil(margins) * baseLineRatio * baseFontSize;
+  var base = margins * baseLineRatio * baseFontSize;
 
   return base - border;
 }
