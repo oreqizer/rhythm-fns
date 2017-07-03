@@ -23,6 +23,8 @@ The entire package exports just these 4 pure functions.
 
 Calculates the height to apply to an element that uses height.
 
+**Params**
+
  * `baseFontSize` - ratio between the base font size and line height
  * `baseLineRatio` - absolute base font size used across the page
  * `heightScale` - your element's desired height relative to the base line height
